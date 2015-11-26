@@ -186,6 +186,9 @@ public class Roadwork {
 					break;
 
 				case 'c':
+					if (i == 0 || i == (2*height - 2) || j == 0 || j == (2*width - 2)) {
+						break;
+					}
 					numberOfCriticalPoints++;
 					int position = graph.size();
 					graph.add(position,new LinkedList<Edge>());
